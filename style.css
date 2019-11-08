@@ -1,0 +1,155 @@
+#header {
+  position:absolute;
+  top: 0;
+  margin: auto;
+}
+
+#outergrid {
+  display: grid;
+  max-width: 960px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 300px;
+  grid-template-columns: 320px 640px;
+  grid-template-rows: auto;
+  grid-column-gap:2em;
+  grid-row-gap: 0px;
+  grid-template-areas:
+  "portfolio innergrid"
+}
+
+#innergrid {
+  display: grid;
+  grid-template columns: 1fr 1fr;
+  grid-template-rows: 220px 300px 345px 340px 215px 220px;
+  grid-gap: 1.2em;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-template-areas:
+  "profile experience"
+  "skills experience"
+  "education experience"
+  "honors experience"
+  "activities experience"
+  "contact experience"
+}
+
+body {
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  color:#222;
+  font-size: 8.2em;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+h2 {
+  color: #222;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+h3 {
+  color: rgb(128,128,128);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+p strong {
+  font-style: italic;
+  font-size: 90%;
+  margin:5px;
+}
+
+a:hover, #experience:hover {
+  background-color: rgba(255, 204, 0,.2);
+}
+
+a:link {
+  color: #222;
+}
+
+a:visited {
+  color: rgb(255, 0, 255);
+}
+
+a:active {
+  color: rgb(102, 255, 102);
+}
+
+#profile:hover, #skills:hover, #education:hover, #contact:hover, #honors:hover, #activities:hover {
+  background-color:rgba(0, 153, 153,.1);
+}
+
+#spacing {
+  margin-bottom:5px;
+  margin-top: 2px;
+}
+
+#main {
+  grid-area:main;
+}
+
+#innergrid {
+  grid-area: innergrid;
+}
+
+#header {
+  grid-area:header;
+}
+
+#profile {
+  grid-area: profile;
+}
+
+#experience {
+  grid-area:experience;
+}
+
+#skills {
+  grid-area: skills;
+}
+
+#education {
+  grid-area:education;
+}
+
+#honors {
+  grid-area:honors;
+}
+
+#activities {
+  grid-area:activities;
+}
+
+#portfolio {
+  grid-area:portfolio;
+}
+
+#contact {
+  grid-area:contact;
+}
+
+
+h2,section,article,#profile, #skills, #education, #contact, #honors, #activities {
+  padding: 0px;
+  margin:0px;
+}
+
+
+p {
+  padding: 0;
+  margin:1px;
+}
+
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding:0;
+}
